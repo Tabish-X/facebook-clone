@@ -1,0 +1,3 @@
+#change-contact-info-input:focus + #change-contact-info-label {
+  @apply text-_theme_secondary_blue text-xs top-[11px];
+}

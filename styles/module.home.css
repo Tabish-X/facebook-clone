@@ -1,0 +1,33 @@
+/* Stories slider */
+#card:hover img {
+  transform: scale(1.02);
+}
+
+#card:hover #hover {
+  @apply opacity-10;
+}
+
+/* Left aside scroll bar customization */
+@property --var1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f0f2f5;
+}
+
+.scrolling {
+  transition: --var1 .4s;
+}
+
+.scrolling:hover {
+  --var1: #bcc0c4;
+}
+
+.scrolling::-webkit-scrollbar {
+  background: #f0f2f5;
+  width: 8px;
+}
+
+.scrolling::-webkit-scrollbar-thumb {
+  background: var(--var1);
+  border-radius: 4px;
+}

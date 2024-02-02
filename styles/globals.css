@@ -1,0 +1,66 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::placeholder {
+  @apply text-gray-30
+}
+
+.dark-blue {
+  color: #385898;
+}
+#user_auth_image.drop_active {
+  @apply scale-90;
+}
+#auth_user_dropdown.drop_active {
+  @apply scale-100;
+}
+
+.loading-animation {
+  animation: loadingAnimation 1s linear forwards;
+}
+
+.loading-animation-2 {
+  animation-delay: 200ms;
+}
+.loading-animation-3 {
+  animation-delay: 500ms;
+}
+
+.loading-animation-4 {
+  animation-delay: 800ms;
+}
+.loading-animation-5 {
+  animation-delay: 1000ms;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    @apply bg-gray-300;
+  }
+  /* 50% {
+    @apply bg-blue-300;
+  } */
+
+  100% {
+    @apply bg-blue-600;
+  }
+}
